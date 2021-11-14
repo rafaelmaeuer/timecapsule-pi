@@ -89,7 +89,7 @@ In order to spin down the HDD manually or on shutdown, another script is necessa
 - Copy contents of `Desktop` folder to `/home/pi/Desktop`
 - Replace {NameOfHDD} with HDD name in `Scripts/ejectHDD.sh`
 
-Now a manual eject of HDD or shutdown including spindown of HDD is possible using the desktop shortcuts. Therefore a capable cable is required as [Startech eSATA/USB3](https://www.startech.com/de-de/hdd/usb3s2esata3 (only RevA is working, spindown with RevB doesn't work anymore)
+Now a manual eject of HDD or shutdown including spindown of HDD is possible using the desktop shortcuts. Therefore a capable cable is required as [Startech eSATA/USB3](https://www.startech.com/de-de/hdd/usb3s2esata3) (only `RevA` is working, spindown with `RevB` doesn't work anymore)
 
 ### 5. Find Time Capsule with macOS
 
