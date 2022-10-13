@@ -1,0 +1,10 @@
+[Unit]
+Description=[=======Restart-Netatalk=======]
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/bin/bash /home/pi/Scripts/restart.sh
+
+[Install]
+WantedBy=multi-user.target

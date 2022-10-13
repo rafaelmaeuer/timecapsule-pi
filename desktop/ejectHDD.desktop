@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Link
+Name=EjectHDD
+Icon=drive-removable-media.png
+URL=/home/pi/Scripts/ejectHDD.sh
