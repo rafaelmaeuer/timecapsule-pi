@@ -4,7 +4,7 @@ Running Time Machine Server on Raspberry Pi using an exFAT HDD
 
 Inspired by [macOS Backup Raspberry Pi als NAS mit TimeMachine](https://knasan.de/index.php?/archives/10-macOS-Backup-Raspberry-Pi-als-NAS-mit-TimeMachine.html)
 
-![HandBrake on RPi4](Images/TimeMachine-BigSur.png)
+![TimeMachine on RPi4](images/TimeMachine-BigSur.png)
 
 ### 1. Add exFAT support
 
@@ -74,11 +74,11 @@ For the Raspberry Pi to act as a NAS (Time Capsule) the program netatalk is requ
 
 As macOS doesn't recognize the backup drive after start adding a restart script is required
 
-- Copy `Scripts` folder to `/home/pi/`
+- Copy `scripts` folder to `/home/pi/`
 - Enable system service to run `restart.sh` on startup
 
     ```sh
-    sudo systemctl enable /home/pi/Scripts/restart.service --now
+    sudo systemctl enable /home/pi/scripts/restart.service --now
     sudo systemctl daemon-reload
     ```
 
@@ -86,8 +86,8 @@ As macOS doesn't recognize the backup drive after start adding a restart script 
 
 In order to spin down the HDD manually or on shutdown, another script is necessary
 
-- Copy contents of `Desktop` folder to `/home/pi/Desktop`
-- Replace {NameOfHDD} with HDD name in `Scripts/ejectHDD.sh`
+- Copy contents of `desktop` folder to `/home/pi/desktop`
+- Replace {NameOfHDD} with HDD name in `scripts/ejectHDD.sh`
 
 Now a manual eject of HDD or shutdown including spindown of HDD is possible using the desktop shortcuts. Therefore a capable cable is required as [Startech eSATA/USB3](https://www.startech.com/de-de/hdd/usb3s2esata3) (only `RevA` is working, spindown with `RevB` doesn't work anymore)
 
