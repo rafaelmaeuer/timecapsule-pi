@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=Shutdown
-Type=Application
-Terminal=true
-Icon=system-shutdown.png
-Exec=sh -c "/home/pi/Scripts/ejectHDD.sh shutdown"
